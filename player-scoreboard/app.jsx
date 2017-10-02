@@ -54,6 +54,7 @@ function show (){
 	);
   });
 }
+// etiquetas
 
 const Header = (props) => {
   	return(
@@ -102,7 +103,7 @@ const Form = (props) => {
   );
 }
 
-// creo la etiqueta
+// creo la etiqueta que contiene las demás etiquetas
 const TableroScore = ({title, players}) => {
    return (
 	 <div className="scoreboard">
