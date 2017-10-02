@@ -32,7 +32,7 @@ function addScore (){
 	},0);
 }
 
-function showPlayers (){
+function show (){
   return players.map((player, index)=>{
 	return (
 		<div className="player">
@@ -85,13 +85,13 @@ const Header = (props) => {
   	);
 } 
 
-const PlayerList = (props) => {
+const List = (props) => {
   return (
-	  <div>{showPlayers(props.players)}</div> 
+	  <div>{show(props.players)}</div> 
   );
 }
 
-const PlayerForm = (props) => {
+const Form = (props) => {
   return (
 	<div className="add-player-form">
 		<form>
@@ -107,8 +107,8 @@ const TableroScore = ({title, players}) => {
    return (
 	 <div className="scoreboard">
 		<Header players={players} title={title}/>
-		<PlayerList players={players}/>
-		<PlayerForm />
+		<List players={players}/>
+		<Form />
 	  </div>      
    );
 }
